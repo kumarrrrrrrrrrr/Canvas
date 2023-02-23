@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.main
+{
+    background-color: rgba(91, 93, 91, 0.389);
+    min-height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content:center;   
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.drop_box
+{   display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 17px;
+    
+}
+.drop_box div
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10px;
+   
+}
+.drop_box svg
+{   
+    font-size: 25px;
+    
+}
+.cont
+{
+    
+    width: 90%;
+    height:200px;
+    padding: 10px;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    animation-name: vis;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    overflow-x: scroll;
+    
+}
+.cont::-webkit-scroll
+{
+    display: none;
+}
+
+.color_box
+{
+    
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    font-size: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 255, 255);
+    
+}
+
+@keyframes vis
+{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
